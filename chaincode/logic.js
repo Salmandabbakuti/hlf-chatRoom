@@ -120,13 +120,11 @@ async outbox(ctx,userId,key) {
 
        return('Error:Incorrect UserId..!');
           }
-     
+      let user=JSON.parse(userAsBytes);
  	 if (user.AccessKey!=key) {
         return('Error:Incorrect AccessKey..!');
-          
-          }
+         }
 
-    let user=JSON.parse(userAsBytes);
     if (!friendAsBytes || friendAsBytes.toString().length <= 0) {
 
        return('Error:No User found with this Id!');
