@@ -1,0 +1,21 @@
+{
+  "name": "chatRoom",
+  "description": "Simple Chat Application on HyperledgerFabric using node.js",
+  "engines": {
+    "node": ">=8.4.0",
+    "npm": ">=5.3.0"
+  },
+  "scripts": {
+      "test":"mocha.....
+  },
+  "engine-strict": true,
+  "engineStrict": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fabric-chaincode-api": "^1.4.0",
+    "fabric-shim": "^1.4.0"
+  }
+}
