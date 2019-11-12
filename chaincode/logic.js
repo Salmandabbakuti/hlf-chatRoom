@@ -42,13 +42,14 @@ class Chat extends Contract {
         return('Error:Incorrect AccessKey..!');
           
           }
-     let Recipient=JSON.parse(recipientAsBytes);
      if (!recipientAsBytes || recipientAsBytes.toString().length <= 0) {
          
        return('Error:Incorrect RecipientId..!');
          }
 
-     else {  
+     else {
+         
+      let Recipient=JSON.parse(recipientAsBytes);
       let timeStamp= await ctx.stub.getTxTimestamp();
       const timestamp = new Date(timeStamp.getSeconds() * 1000).toISOString();
         let messageData={ 
